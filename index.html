@@ -1,116 +1,115 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="uft-8"/> 
+	<meta charset="uft-8"/>
 	<title>Hospice Myths</title>
-	<link rel="stylesheet" type="text/css" href="cubestyle.css"/>
-	<link rel="stylesheet" type="text/css" href="cube.css"/>
+	<link rel="stylesheet" type="text/css" href="style/cubestyle.css"/>
+	<link rel="stylesheet" type="text/css" href="style/cube.css"/>
 	<script type="text/javascript" src="js/modinizr.js"></script>
 	<script type="text/javascript" src="js/video.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-<script src='/google_analytics_auto.js'></script></head>
-<body>
+
+
+</head>
+<!--Load first question-->
+<body onload="CubeData()">
+
+
+
+
+
+
 	<div id="viewport">
 		<div id="cube">
-			
+
             <!-- question 1 start -->
-            
+
             <div id="front">
 				<div id="question1">
 					<h1>Question 1</h1>
 					<div class="ui_form">
-						
-						<h1>Does Medicare or my insurance pay for hospice services?</h1>
-				
+
+
+						<h1 id="question"></h1>
+
 					</div>
-					
+
 					<center>
-                    <a href="#back" class="anim" data-anim="back">Incorrect</a>
-                    <a href="#right" class="anim" data-anim="right">Correct</a>
+                    <a href="JavaScript:void(0);" class="anim" onclick="check_answer('incorrect')" >Incorrect</a>
+                    <a href="JavaScript:void(0);" class="anim" onclick="check_answer('correct')" >Correct</a>
                     </center>
 				</div>
-                
-             
-                
+
+
+
 			</div>
-            
-            
-          <!-- question 1 end -->  
-            
-			
-           
-           
-            <!-- question 1 False start -->  
-           
+
+
+          <!-- question 1 end -->
+
+
+
+
+            <!-- question 1 False start -->
+
             <div id="right">
-				<div class="videoWrapper smallVideo">
-				    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640"
-				    height="264" 
-				        
-				      <source src="http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523a.mp4" type='video/mp4' />
-				      <source src="http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523_4.webm" type='video/webm' />
-				      <source src="" type='video/ogg' />
-				    </video>
+				<div class="videoWrapper smallVideo" id="inject_vidR">
+
 			  </div>
-				
+
 				<div id="buttons">
-					<a href="#question1" id="first_btn" class="anim" data-anim="question1">Back</a>
-					
+					<a href="#question1" id="first_btn" class="anim" data-anim="question1">Back R</a>
+
 			  </div>
 			</div>
-           
-            
+
+
+
+
            <!-- question 1 False end -->
-           
-           
-			
-            <!-- question 1 correct start -->  
-            
+
+
+
+            <!-- question 1 correct start -->
+
             <div id="back">
-				<div class="videoWrapper smallVideo">
-				    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640"
-				    height="264" 
-				        poster="http://tidewellhospice.org/welcome/wp-content/uploads/2015/11/emersonstill.jpg"
-				        data-setup="{}">
-				      <source src="http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523a.mp4" type='video/mp4' />
-				      <source src="http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523_4.webm" type='video/webm' />
-				      <source src="" type='video/ogg' />
-				    </video>
+				<div class="videoWrapper smallVideo" id="inject_vid">
+				    <!--inject video-->
 			  </div>
-				
+
 				<div id="buttons">
-					<a href="#question1" id="first_btn" class="anim" data-anim="question1">Back</a>
+					<a href="" id="first_btn" class="anim" data-anim="question1">Back L</a>
 				</div>
 			</div>
-            
-            <!-- question 1 correct end -->  
-            
-			  
+
+            <!-- question 1 correct end -->
+
+
             <!-- question 1 last frame start -->
-            
-            <div id="left">
+
+            <!-- <div id="left">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lorem libero, blandit eu imperdiet at, auctor a odio. Ut in pellentesque lectus. Mauris et libero libero. Donec velit velit, faucibus et diam eget, mollis auctor justo. Donec rutrum imperdiet luctus. Mauris ac diam neque. Lorem ipsum dolor sit amet blandit eu imperdiet at, dollis auctor justo donec rutrum imperdiet luctus.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lorem libero, blandit eu imperdiet at, auctor a odio. Ut in pellentesque lectus. Mauris et libero libero. Donec velit velit, faucibus et diam eget, mollis auctor justo. Donec rutrum imperdiet luctus. Mauris ac diam neque. Lorem ipsum dolor sit amet blandit eu imperdiet at, dollis auctor justo donec rutrum imperdiet luctus.</p>
 				<a href="#top" class="anim" data-anim="top">Finish</a>
-			</div>
-            
-            
-          <!-- question 1 last frame end -->  
-            
-            
+			</div> -->
+
+
+          <!-- question 1 last frame end -->
+
+
 			<div id="top">
 				<h1>Thank you!</h1>
-				
+
 			</div>
 					<div id="bottom"> </div>
-	
+
 		</div>
-	
+
     </div>
-	 	
-    
-    
+
+
+		<script type="text/javascript" src="makecube.js"></script>
+		<script type="text/javascript" src="Data.js"></script>
 </body>
 </html>
