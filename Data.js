@@ -17,15 +17,15 @@ var CubeData = ([
 {
 "question": "Apple is blue",
 "answer": "incorrect",
-"video_for_correct"   : "",
-"video_for_incorrect" : ""
+"video_for_correct"   : "http://techslides.com/demos/sample-videos/small.mp4",
+"video_for_incorrect" : "http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523a.mp4"
 },
 
 {
 "question": "sea is blue",
 "answer": "correct",
-"video_for_correct"   : "",
-"video_for_incorrect" : ""
+"video_for_correct"   : "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/car-20120827-85.mp4",
+"video_for_incorrect" : "http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523a.mp4"
 },
 
 
