@@ -26,8 +26,9 @@
             <!-- question 1 start -->
 
             <div id="front">
+				<input type="hidden" id="count" value="">
 				<div id="question1">
-					<h1>Question 1</h1>
+					<h1>Question <span id="qnums"></span>  </h1>
 					<div class="ui_form">
 
 
@@ -59,7 +60,8 @@
 			  </div>
 
 				<div id="buttons">
-					<a href="#question1" id="first_btn" class="anim" data-anim="question1">Back R</a>
+					<!--<a href="javascript:void(0);" id="first_btn" class="anim" onclick="back();">Back R</a>-->
+                    <a href="javascript:void(0);" id="first_btn" class="anim" onclick="next()" >Next question</a>
 
 			  </div>
 			</div>
@@ -73,13 +75,15 @@
 
             <!-- question 1 correct start -->
 
+
             <div id="back">
-				<div class="videoWrapper smallVideo" id="inject_vid">
+
+					<div class="videoWrapper smallVideo" id="inject_vid">
 				    <!--inject video-->
 			  </div>
 
 				<div id="buttons">
-					<a href="" id="first_btn" class="anim" data-anim="question1">Back L</a>
+					<a href="javascript:void(0);" id="first_btn" class="anim"  onclick="back();">Back</a>
 				</div>
 			</div>
 
