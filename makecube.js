@@ -1,3 +1,15 @@
+/**
+ *Main brain of the cube
+ * @author sam0hack
+ * @company ILM Techno solutions
+ *
+ */
+
+
+/**
+ *
+ * @constructor
+ */
 function CubeData() {
 
   var arr  = data();
@@ -10,7 +22,10 @@ function CubeData() {
 
 }
 
-
+/**
+ *
+ * @param ans
+ */
 function check_answer(ans){
 
         var count  = document.getElementById('count').value;
@@ -63,7 +78,9 @@ function check_answer(ans){
 }
 
 
-
+/**
+ * next question
+ */
 function next() {
 
     var arr  = data();
@@ -102,7 +119,9 @@ function next() {
 }
 
 
-
+/**
+ * back if incorrect answer
+ */
 function back() {
 
 
