@@ -21,11 +21,11 @@
 
 
 	<div id="viewport">
-		<div id="cube">
+		<div id="cube" class="right">
 
             <!-- question 1 start -->
 
-            <div id="front">
+            <div id="right">
 				<input type="hidden" id="count" value="">
 				<div id="question1">
 					<h1>Question <span id="qnums"></span>  </h1>
@@ -37,8 +37,10 @@
 					</div>
 
 					<center>
-                    <a href="JavaScript:void(0);" class="anim" onclick="check_answer('incorrect')" >Incorrect</a>
-                    <a href="JavaScript:void(0);" class="anim" onclick="check_answer('correct')" >Correct</a>
+
+                        <a href="JavaScript:void(0);" class="anim" onclick="check_answer('correct')" >Correct</a>
+                        <a href="JavaScript:void(0);" class="anim" onclick="check_answer('incorrect')" >Incorrect</a>
+
                     </center>
 				</div>
 
@@ -54,10 +56,11 @@
 
             <!-- question 1 False start -->
 
-            <div id="right">
+            <div id="front">
 				<div class="videoWrapper smallVideo" id="inject_vidR">
 
 			  </div>
+
 
 				<div id="buttons">
 					<!--<a href="javascript:void(0);" id="first_btn" class="anim" onclick="back();">Back R</a>-->
@@ -92,11 +95,17 @@
 
             <!-- question 1 last frame start -->
 
-            <!-- <div id="left">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lorem libero, blandit eu imperdiet at, auctor a odio. Ut in pellentesque lectus. Mauris et libero libero. Donec velit velit, faucibus et diam eget, mollis auctor justo. Donec rutrum imperdiet luctus. Mauris ac diam neque. Lorem ipsum dolor sit amet blandit eu imperdiet at, dollis auctor justo donec rutrum imperdiet luctus.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lorem libero, blandit eu imperdiet at, auctor a odio. Ut in pellentesque lectus. Mauris et libero libero. Donec velit velit, faucibus et diam eget, mollis auctor justo. Donec rutrum imperdiet luctus. Mauris ac diam neque. Lorem ipsum dolor sit amet blandit eu imperdiet at, dollis auctor justo donec rutrum imperdiet luctus.</p>
-				<a href="#top" class="anim" data-anim="top">Finish</a>
-			</div> -->
+             <div id="left">
+
+                 <div class="videoWrapper smallVideo" id="inject_vid">
+                     <!--inject video-->
+                 </div>
+
+                 <div id="buttons">
+                     <a href="javascript:void(0);" id="first_btn" class="anim"  onclick="back();">Back</a>
+                 </div>
+
+			 </div>
 
 
           <!-- question 1 last frame end -->

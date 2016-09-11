@@ -7,7 +7,7 @@ var CubeData = ([
 
 //question1 start
 {
-"question": "JavaScript is a client side language",
+"question": "2 + 2 = 4",
 "answer"  : "correct",
 "video_for_correct"   : "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4",
 "video_for_incorrect" : "http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523a.mp4"
@@ -15,14 +15,14 @@ var CubeData = ([
 //question1 end
 
 {
-"question": "Apple is blue",
-"answer": "incorrect",
+"question": "1 + 1 = 2",
+"answer": "correct",
 "video_for_correct"   : "http://techslides.com/demos/sample-videos/small.mp4",
 "video_for_incorrect" : "http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523a.mp4"
 },
 
 {
-"question": "sea is blue",
+"question": "3 x 3 = 9",
 "answer": "correct",
 "video_for_correct"   : "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/car-20120827-85.mp4",
 "video_for_incorrect" : "http://tidewellhospice.org/welcome/wp-content/uploads/2015/03/MVI_7523a.mp4"

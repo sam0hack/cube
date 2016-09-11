@@ -42,7 +42,7 @@ function check_answer(ans){
 
         if (ans==answer) {
 
-          anim = 'right';
+          anim = 'bottom';
 
           var vid_cor = '<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" <source src="'+video_for_correct+'" type="video/mp4" /><source src="#" type="video/webm" /><source src="" type="video/ogg" /></video>';
 
@@ -102,7 +102,7 @@ function next() {
         //Run animation
         $(function () {
 
-            $('#cube').removeClass().addClass('bottom');
+            $('#cube').removeClass().addClass('right');
 
         });
     }else{
@@ -128,7 +128,7 @@ function back() {
     //Run animation
     $(function () {
 
-        $('#cube').removeClass().addClass('');
+        $('#cube').removeClass().addClass('right');
 
     });
 
