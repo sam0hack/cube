@@ -20,7 +20,9 @@ body {
   background: #f4d37a; }
 
 #left {
-  background: url("images/lightBG.jpg"); }
+    background: #f4d37a;
+  /*background: url("images/lightBG.jpg"); */
+}
 
 #right {
   background: #f4d37a; }
@@ -160,6 +162,39 @@ a {
   line-height: 150%;
   font-size: 14px;
   color: #666; }
+
+
+
+
+
+
+
+
+ a {
+     display: inline-block;
+     float: right;
+     margin: 42px 129px 45px 10px;
+     padding: 0 25px;
+     line-height: 35px;
+     background: #fff;
+     font-size: 16px;
+     font-weight: 600;
+     color: #2b2b2b;
+     text-align: center;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     border-radius: 30px;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     transition: all 0.3s;
+ }
+
+a:hover {
+    background: #cd9c50;
+    color: #fff;
+}
+
 
 #left a {
   display: block;
