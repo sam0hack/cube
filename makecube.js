@@ -44,7 +44,7 @@ function check_answer(ans){
 
           anim = 'bottom';
 
-          var vid_cor = '<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" <source src="'+video_for_correct+'" type="video/mp4" /><source src="#" type="video/webm" /><source src="" type="video/ogg" /></video>';
+          var vid_cor = '<video autoplay id="correct_video" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" <source src="'+video_for_correct+'" type="video/mp4" /><source src="#" type="video/webm" /><source src="" type="video/ogg" /></video>';
 
           document.getElementById('inject_vidR').innerHTML = vid_cor;
 
@@ -58,7 +58,7 @@ function check_answer(ans){
 
           //wrong answer
           anim =  'back';
-          var vid = '<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" poster="http://tidewellhospice.org/welcome/wp-content/uploads/2015/11/emersonstill.jpg" data-setup="{}"> <source src="'+ video_for_incorrect+'" type="video/mp4" /> <source src="#" type="video/webm" /> <source src="" type="video/ogg" /> </video>';
+          var vid = '<video autoplay id="wrong_video" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" poster="http://tidewellhospice.org/welcome/wp-content/uploads/2015/11/emersonstill.jpg" data-setup="{}"> <source src="'+ video_for_incorrect+'" type="video/mp4" /> <source src="#" type="video/webm" /> <source src="" type="video/ogg" /> </video>';
           document.getElementById('inject_vid').innerHTML = vid;
 
 
@@ -87,6 +87,9 @@ function next() {
 
     //get number of questions
     var nos  = arr.length;
+
+    var vid = document.getElementById("correct_video");
+    vid.pause();
 
     var count = document.getElementById('count').value;
     count = parseInt(count);
@@ -125,6 +128,10 @@ function next() {
 function back() {
 
 
+
+
+    var vid = document.getElementById("wrong_video");
+    vid.pause();
     //Run animation
     $(function () {
 
